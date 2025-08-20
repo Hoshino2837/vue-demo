@@ -6,7 +6,8 @@
   <!-- <process/> -->
   <!-- <model/> -->
   <!-- <props :message="message" :age="age" :name="name"/> -->
-  <emit @transfer="transferMessage"/>
+  <!-- <emit @transfer="transferMessage"/> -->
+   <lifeCycle/>
 </template>
 
 <script>
@@ -16,8 +17,8 @@
   // import process from './components/事件处理20250819.vue',
   // import model from './components/表单输入绑定20250819.vue',
   // import props from './components/props20250819.vue',
-  import emit from './components/自定义组件交互20250820.vue'
-
+  // import emit from './components/自定义组件交互20250820.vue'
+  import lifeCycle from './components/生命周期20250820.vue'
 export default {
   name: 'App',
   components: {
@@ -27,7 +28,8 @@ export default {
     // proces,s
     // model,
     // props,
-    emit,
+    // emit,
+    lifeCycle
   },
   data(){
     return{
